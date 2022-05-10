@@ -16,13 +16,15 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/"
+              >메인 페이지</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="/list">글 내용</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="/detail">세부내용</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
@@ -31,10 +33,9 @@
       </div>
     </div>
   </nav>
-  <router-link to="/list">리스트 페이지</router-link>
-  <router-link to="/">홈페이지</router-link>
-  <router-link to="/detail">상세페이지</router-link>
-  <router-view :blogle="blogle"></router-view>
+  <div class="mt-4">
+    <router-view :blogle="blogle"></router-view>
+  </div>
 </template>
 
 

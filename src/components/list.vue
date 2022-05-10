@@ -1,6 +1,6 @@
 <template>
   <div v-for="(a, i) in blogle" :key="a">
-    <h4>{{ blogle[i].title }}</h4>
+    <h4 @click="$router.push(`/detail/${i}`)">{{ blogle[i].title }}</h4>
     <p>{{ blogle[i].date }}</p>
   </div>
 </template>
